@@ -15,7 +15,7 @@ export default class CardComponent extends Component {
                 <li class='services__item'>
                     <article class='services-card'>
                         <div class='services-card__wrapper-image'>
-                            <img class='services-card__image' src='/images/card-image/${img}' alt='${title}' loading='lazy'/>
+                            <img class='services-card__image' src='./assets/images/card-image/${img}' alt='${title}' loading='lazy'/>
                         </div>
                         <div class='services-card__body'>
                             <h3 class='services-card__title'>${title}</h3>
