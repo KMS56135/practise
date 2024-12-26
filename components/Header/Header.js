@@ -10,19 +10,19 @@ export default class HeaderComponent extends Component {
         return `
             <header class='header'>
                 <div class='header__inner container'>
-                    <a class='header__logo logo' href='/'>
+                    <a class='header__logo logo' href='>
                         <img class='logo__image' src='./assets/images/icons/logo.svg' alt='Fylo' width='176' height='52' loading='lazy' />
                     </a>
                     <nav class='header__menu hidden-mobile'>
                         <ul class='header__menu-list'>
                             <li class='header__menu-item'>
-                                <a class='header__menu-link' href='/'>Возможности</a>
+                                <a class='header__menu-link' href='#services-block'>Возможности</a>
                             </li>
                             <li class='header__menu-item'>
-                                <a class='header__menu-link' href='/'>Команда</a>
+                                <a class='header__menu-link' href="#banner-block">Команда</a>
                             </li>
                             <li class='header__menu-item'>
-                                <a class='header__menu-link' href='/'>Отзывы</a>
+                                <a class='header__menu-link' href="#revievs-block">Отзывы</a>
                             </li>
                         </ul>
                     </nav>
