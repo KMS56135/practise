@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <title>Fylo</title>
+        <link rel="icon" type="image/png" href="./assets/images/favicon.ico" />
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script type="module">
+            import Main from './index.js';
+
+            Main.init();
+
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                loop: true,
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+        <style>
+            .swiper {
+                max-width: 760px;
+            }
+            .swiper-slide {
+                padding: 56px;
+                padding-top: 40px;
+                display: flex;
+                flex-direction: column;
+                background-color: #181f2b;
+                border-radius: 4px;
+                box-shadow: var(--shadow-card);
+            }
+
+            .swipper-description {
+                font-family: var(--font-family-primary);
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: 0.04em;
+                color: #fff;
+                margin-bottom: 24px;
+            }
+
+            .swipper-wrapper-author {
+                display: flex;
+                column-gap: 18px;
+            }
+
+            .swipper-image {
+                border-radius: 50%;
+                max-height: 24px;
+            }
+
+            .swipper-author-name {
+                font-family: var(--font-family-primary);
+                font-weight: 700;
+                font-size: 10px;
+                line-height: 120%;
+                letter-spacing: 0.05em;
+                color: #fff;
+            }
+
+            .swipper-author-work {
+                font-family: var(--font-family-secondary);
+                font-weight: 400;
+                font-size: 7px;
+                line-height: 143%;
+                letter-spacing: 0.07em;
+                color: #fff;
+            }
+
+            .swipper-button {
+                color: var(--accent-cyan);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <div data-header-holder></div>
+            <main class="content">
+                <section class="section container">
+                    <div class="section__body">
+                        <div class="hero">
+                            <div class="hero__main">
+                                <img class="hero__image" loading="lazy" src="./assets/images/Люди работают с документами.png" alt="Люди работают c документами и папкой." />
+                                <div class="hero__body">
+                                    <h1 class="hero__title">Bce ваши файлы в одном безопасном месте, доступном из любой точки.</h1>
+                                    <p class="hero__description">
+                                        Fylo хранит все ваши самые важные файлы в одном защищенном месте. Получайте к ним доступ, где бы вы ни находились, делитесь ими и
+                                        сотрудничайте с друзьями, семьей и коллегами.
+                                    </p>
+                                    <button class="hero__button button button--primary">Начать работу</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section container">
+                    <div class="section__body">
+                        <div class="services">
+                            <div data-js-services-holder-list></div>
+                            <div class="services__banner banner">
+                                <div class="banner__inner">
+                                    <img class="banner__image" src="./assets/images/Люди держат файлы.png" alt="Люди держат файлы" loading="lazy" />
+                                    <div class="banner__body">
+                                        <h3 class="banner__title">Оставайтесь продуктивными, где бы вы ни находились</h3>
+                                        <div class="banner__description">
+                                            <p>
+                                                Никогда не позволяйте местоположению быть преградой для доступа к вашим файлам. Fylo позаботится обо всех ваших потребностях в
+                                                хранении данных.
+                                            </p>
+                                        </div>
+                                        <div class="banner__description">
+                                            <p>
+                                                Делитесь файлами и папками с друзьями, семьей и коллегами для совместной работы в реальном времени. Никаких вложений в письма больше
+                                                не потребуется.
+                                            </p>
+                                        </div>
+                                        <a class="banner__link" href="#">
+                                            <span class="banner__link-label">Узнайте, как работает Fylo</span>
+                                            <span class="banner__link-icon-wrapper">
+                                                <svg class="banner__link-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <defs>
+                                                        <circle id="b" cx="6" cy="6" r="6" />
+                                                        <filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a">
+                                                            <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                                                            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1" />
+                                                            <feColorMatrix
+                                                                values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0"
+                                                                in="shadowBlurOuter1"
+                                                            />
+                                                        </filter>
+                                                    </defs>
+                                                    <g fill="black" fill-rule="evenodd">
+                                                        <g transform="translate(2 2)">
+                                                            <use fill="black" filter="url(#a)" xlink:href="#b" />
+                                                            <use fill="#62E0D9" xlink:href="#b" />
+                                                        </g>
+                                                        <path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="black" />
+                                                    </g>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section container">
+                    <div class="section__body">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <p class="swipper-description">
+                                        Fylo значительно повысил продуктивность нашей команды. С момента перехода наша команда превратилась в идеально слаженный механизм для
+                                        совместной работы.
+                                    </p>
+                                    <div class="swipper-wrapper-author">
+                                        <img class="swipper-image" src="./assets/images/profile-1.jpg" width="24" height="24" alt="author" />
+                                        <div class="swipper-author">
+                                            <div class="swipper-author-name">Satish Patel</div>
+                                            <div class="swipper-author-work">Founder & CEO, Huddle</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="swipper-description">
+                                        Fylo значительно повысил продуктивность нашей команды. С момента перехода наша команда превратилась в идеально слаженный механизм для
+                                        совместной работы.
+                                    </p>
+                                    <div class="swipper-wrapper-author">
+                                        <img class="swipper-image" src="./assets/images/profile-2.jpg" width="24" height="24" alt="author" />
+                                        <div class="swipper-author">
+                                            <div class="swipper-author-name">Bruce McKenzie</div>
+                                            <div class="swipper-author-work">Iva Boyd</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <p class="swipper-description">
+                                        Fylo значительно повысил продуктивность нашей команды. С момента перехода наша команда превратилась в идеально слаженный механизм для
+                                        совместной работы.
+                                    </p>
+                                    <div class="swipper-wrapper-author">
+                                        <img class="swipper-image" src="./assets/images/profile-3.jpg" width="24" height="24" alt="author" />
+                                        <div class="swipper-author">
+                                            <div class="swipper-author-name">Satish Patel</div>
+                                            <div class="swipper-author-work">Founder & CEO, Huddle</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev swipper-button"></div>
+                            <div class="swiper-button-next swipper-button"></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__inner container">
+                    <img class="footer__logo" src="./assets/images/icons/logo.svg" alt="logo" />
+                    <div class="footer__body">
+                        <div class="footer__location">
+                            <img src="./assets/images/icons/icon-location.svg" width="24" height="24" alt="location" class="footer__location-icon" />
+                            <p class="footer__location-adress">г.Спб ул.руставели дом 33</p>
+                        </div>
+                        <div class="footer__contacts">
+                            <a href="tel" class="footer__contacts-phone-link">
+                                <span class="footer__contants-group">
+                                    <img src="./assets/images/icons/icon-phone.svg" alt="phone" class="footer__contacts-phone-image" />
+                                    <span class="footer__contacts-phone-number">+7 (812) 123-45</span>
+                                </span>
+                            </a>
+                            <a href="mail" class="footer__contacts-mail-link">
+                                <span class="footer__contants-group">
+                                    <img src="./assets/images/icons/icon-email.svg" alt="phone" class="footer__contacts-mail-image" />
+                                    <span class="footer__contacts-mail-adress">example@fylo.com</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="footer__menu">
+                            <ul class="footer__menu-list">
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="/">Возможности</a>
+                                </li>
+                                <li class="footer_menu-item">
+                                    <a class="footer_menu-link" href="/">Команда</a>
+                                </li>
+                                <li class="footer__menu-item">
+                                    <a class="footer__menu-link" href="/">Отзывы</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <dialog class="mobile-overlay visible-mobile container" id="mobileOverlay">
+            <form class="mobile-overlay__close-button-wrapper" method="dialog">
+                <button class="modile-overlay__close-button cross-button" type="submit">
+                    <span class="visually-hidden">Close navigation menu</span>
+                </button>
+            </form>
+            <div class="mobile-overlay__body">
+                <ul class="mobile-overlay__list">
+                    <li class="mobile-overlay__item">
+                        <a href="/" class="mobile-overlay__link">Возможности</a>
+                    </li>
+                    <li class="mobile-overlay__item">
+                        <a href="/" class="mobile-overlay__link">Команда</a>
+                    </li>
+                    <li class="mobile-overlay__item">
+                        <a href="/" class="mobile-overlay__link">Отзывы</a>
+                    </li>
+                    <li class="mobile-overlay__item">
+                        <a href="/" class="mobile-overlay__link">Получить доступ</a>
+                    </li>
+                </ul>
+            </div>
+        </dialog>
+    </body>
+</html>

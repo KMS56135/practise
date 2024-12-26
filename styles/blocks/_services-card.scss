@@ -1,0 +1,30 @@
+.services-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 16px;
+
+    max-width: 450px;
+    min-height: 215px;
+    box-shadow: var(--shadow-card);
+
+    &__wrapper-image {
+        @include flex-center();
+
+        width: 100%;
+        max-width: 104px;
+        height: 104px;
+    }
+
+    &__title {
+        margin-bottom: 8px;
+        text-align: center;
+        @include base-font-style(var(--font-bold), 1.5, var(--white), var(-font-family-secondary) );
+    }
+
+    &__description {
+        text-align: center;
+        @include base-font-style(var(--font-normal), 1.5, var(--white), var(-font-family-primary) );
+        font-size: 14px;
+    }
+}

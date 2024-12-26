@@ -1,0 +1,49 @@
+.hero {
+    
+    &__main {
+        @include flex-center();
+        flex-direction: column;
+        row-gap: 36px;
+
+        @include mobile() {
+            row-gap: 33px
+        }
+    }
+
+    &__body {
+        max-width: 734px;
+        @include flex-center();
+        flex-direction: column;
+        row-gap: 25px;
+        text-align: center;
+    }
+
+    &__title {
+        @include base-font-style(var(--font-bold));
+
+        font-family: var(--font-family-secondary);
+        font-size: 30px;
+
+        @include mobile() {
+            font-size: 24px;
+        }
+    }
+
+    &__description {
+        @include base-font-style();
+        padding-inline: 72px;
+
+        @include mobile() {
+            padding-inline: 12px;
+            font-size: 14px;
+        }
+    }
+
+    &__button {
+        font-size: 16px;
+        font-weight: var(--font-bold);
+        font-family: var(--font-family-secondary);
+        width: 100%;
+        max-width: 280px;
+    }
+}

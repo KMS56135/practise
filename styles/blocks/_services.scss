@@ -1,0 +1,19 @@
+.services {
+    &__list {
+        &:not(:last-child) {
+            margin-bottom: 137px;
+        }
+
+        column-gap: 147px;
+        row-gap: 79px;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+    }
+}

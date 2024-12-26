@@ -1,0 +1,22 @@
+.button {
+    @include flex-center(true);
+
+    height: var(--button-height-primary);
+    padding-inline: 27px;
+    color: var(--white);
+    font-family: var(--font-family-secondary);
+    border: none;
+    border-radius: var(--border-radius-small);
+
+    @include hover() {
+        background: var(--accent-cyan);
+    }
+
+    &--primary {
+        background-color: var(--accent-blue); 
+    }
+
+    &--secondary {
+        background-color: var(--gradient-secondary);
+    }
+}

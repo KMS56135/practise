@@ -1,0 +1,47 @@
+:root {
+    --primary-dark-blue: hsl(217, 28%, 15%);
+    --accent-cyan: hsl(176, 68%, 64%);
+    --accent-blue: hsl(198, 60%, 50%);
+    --accent-light-red: hsl(0, 100%, 63%);
+    --white: hsl(0, 0%, 100%);
+
+    --gradient-primary: linear-gradient(146deg, #63e1d9 0%, #34a0cd 100%);
+    --gradient-secondary: linear-gradient(139deg, #63e1d9 0%, #34a0cd 100%);
+
+    --border-radius: 28px;
+    --border-radius-small: 24px;
+
+    --shadow-button: 2px 3px 6px 0 rgba(0, 0, 0, 0.16);
+    --shadow-card: 5px 5px 8px 4px rgba(56, 56, 56, 0.1);
+
+    --font-family-primary: 'Open Sans', sans-serif;
+    --font-family-secondary: 'Raleway', sans-serif;
+
+    --container-width: 1280px;
+    --container-padding-x: 20px;
+
+    --section-padding-y: 50px;
+    
+
+    --input-height: 48px;
+    --button-height-primary: 56px;
+    --button-height-secondary: 48px;
+
+    --transition-duration: all 0.4s ease-in;
+
+    --text-xs: 7px;
+    --text-sm: 10px;
+    --font-base: 14px;
+    --font-lg: 16px;
+    --font-xl: 20px;
+    --font-3xl: 32px;
+    --font-4xl: 40px;
+
+    --font-normal: 400;
+    --font-bold: 700;
+
+    @include desktop() {
+        --section-padding-y: 25px;
+    }
+
+}

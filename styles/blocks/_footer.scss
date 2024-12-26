@@ -1,0 +1,99 @@
+.footer {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 108px;
+        height: 31px;
+        margin-right: 50px;
+    }
+
+    &__body {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__location {
+        display: flex;
+
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+            aspect-ratio: 1;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+
+    &__contants-group {
+        display: flex;
+        height: 52px;
+        align-items: center;
+        column-gap: 5px;
+    }
+ 
+    &__menu {
+        
+        font-size: 16px;
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            column-gap: 57px;
+
+            @include desktop {
+                column-gap: 25px;
+            }
+        }
+
+        &-link {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            height: 52px;
+            text-align: center;
+            font-family: var(--font-family-secondary);
+
+            @include hover {
+
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                translate: -50%;
+                height: 2px;
+                width: 0;
+                background-color: var(--accent-cyan);
+                transition-duration: inherit;
+            }
+        }
+    }
+
+    &__sochial {
+        &-list {
+            display: flex;
+        }
+        &-item {
+            border-color: var(--white);
+            border-width: 1px;
+            border-radius: 100%;
+        }
+    }
+}
