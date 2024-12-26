@@ -11,7 +11,7 @@ export default class HeaderComponent extends Component {
             <header class='header'>
                 <div class='header__inner container'>
                     <a class='header__logo logo' href='/'>
-                        <img class='logo__image' src='./assets/images/icons/logo.svg' alt='Fylo' width='176' height='52' loading='lazy' />
+                        <img class='logo__image' src='/assets/images/icons/logo.svg' alt='Fylo' width='176' height='52' loading='lazy' />
                     </a>
                     <nav class='header__menu hidden-mobile'>
                         <ul class='header__menu-list'>
